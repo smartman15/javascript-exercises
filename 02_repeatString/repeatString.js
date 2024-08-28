@@ -6,11 +6,10 @@ const repeatString = function(string, number) {
         // concatenate string to repeatedWord
         repeatedWord += string;
     }
-    // alert repeatedWord
-    console.log(repeatedWord);
+    // return repeatedWord
+    return repeatedWord;
 };
 
-repeatString('hey', 3);
 
 // Do not edit below this line
 module.exports = repeatString;
