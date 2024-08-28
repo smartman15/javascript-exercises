@@ -14,7 +14,7 @@ describe('reverseString', () => {
       '.etinidO ,olleH !cba !321'
     );
   });
-  test.skip('works with blank strings', () => {
+  test('works with blank strings', () => {
     expect(reverseString('')).toEqual('');
   });
 });
