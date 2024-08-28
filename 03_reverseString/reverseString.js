@@ -6,7 +6,7 @@ const reverseString = function(word) {
     // create for loop 
     for (const letter of word){
         // create 'lastInArray' variable and assign pop() to it
-        let lastInArray = word.pop();
+        let lastInArray = myArray.pop();
         // concatenate lastInArray to reversedString
         reversedString += lastInArray;
 
