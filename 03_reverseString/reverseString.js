@@ -13,6 +13,7 @@ const reverseString = function(word) {
     }
     
     // after for loop is over, return reversedString
+    reversedString = reversedString.toString();
     return reversedString;
 };
 
