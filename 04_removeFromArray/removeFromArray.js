@@ -6,9 +6,9 @@ const removeFromArray = function(array, deletedElement) {
             // after finding the element, use splice() to remove it from array
             resultArray = array.splice(i, 1);
         }
-
     }
-    // after for loop is over, return array from slice() result
+    // after for loop is over, return array from splice() result
+    return array;
 };
 
 // Do not edit below this line
