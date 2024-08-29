@@ -1,4 +1,4 @@
-const removeFromArray = function(array) {
+const removeFromArray = function(array, deleteElement) {
     // create for loop 
     // keep iterating until it finds element that you want to remove
     // after finding the element, use slice() to remove it from array
