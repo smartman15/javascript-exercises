@@ -4,7 +4,7 @@ const removeFromArray = function(array, deletedElement) {
         // keep iterating until it finds element that you want to remove (use if statement)
         if (array[i] === deletedElement){
             // after finding the element, use splice() to remove it from array
-            resultArray = array.splice()
+            resultArray = array.splice(i, 1);
         }
 
     }
