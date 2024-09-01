@@ -3,8 +3,13 @@ const removeFromArray = function(array, deletedElement1, deletedElement2, delete
     for (const element of array){
         
         // keep iterating until it finds element that you want to remove (use if statement)
+        if (element === deletedElement1 || element === deletedElement2 || element === deletedElement3 || element === deletedElement4){
             // after finding the element, use splice() to remove it from array
-        
+            
+
+        }
+            
+
     // after for loop is over, return array from splice() result
 };
 
