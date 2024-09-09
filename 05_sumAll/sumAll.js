@@ -3,7 +3,7 @@ const sumAll = function(firstNumber, secondNumber) {
     let totalSum = 0;
     // create for loop
     // in the parentheses, begin with i (sentry) at firstNumber (start) and add 1 (change) to i on each iteration until i is larger than or equal to secondNumber
-    for (let i = firstNumber; i >= secondNumber; i++){
+    for (let i = firstNumber; i <= secondNumber; i++){
         // each iteration add i into totalSum
         totalSum += i;
     }
