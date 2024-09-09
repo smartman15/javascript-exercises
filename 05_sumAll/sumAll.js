@@ -2,8 +2,13 @@ const sumAll = function(firstNumber, secondNumber) {
     // create totalSum and assign it 0
     let totalSum = 0;
 
+    // if a negative number is entered, return error
+    if (firstNumber < 0 || secondNumber < 0){
+        return ('ERROR');
+    }
+
     // if firstNumber is less than secondNumber
-    if (firstNumber < secondNumber){
+    else if (firstNumber < secondNumber){
         // create for loop
         // in the parentheses, begin with i (sentry) at firstNumber (start) and add 1 (change) to i on each iteration until i is larger than or equal to secondNumber
         for (let i = firstNumber; i <= secondNumber; i++){
@@ -11,7 +16,7 @@ const sumAll = function(firstNumber, secondNumber) {
             totalSum += i;
         }
     }
-    
+
     // else if firstNumber is greater than secondNumber
     else if (firstNumber > secondNumber){
         // create for loop
