@@ -7,6 +7,11 @@ const sumAll = function(firstNumber, secondNumber) {
         return ('ERROR');
     }
 
+    // if a non-integer number is entered, return error
+    else if ((firstNumber - Math.floor(firstNumber) !== 0) || (secondNumber - Math.floor(secondNumber) !== 0)){
+        return ('ERROR');
+    }
+
     // if firstNumber is less than secondNumber
     else if (firstNumber < secondNumber){
         // create for loop
