@@ -12,6 +12,11 @@ const sumAll = function(firstNumber, secondNumber) {
         return ('ERROR');
     }
 
+    // if a non-number value is entered, return error
+    else if (typeof(firstNumber) !== 'number' || typeof(secondNumber) !== 'number'){
+        return ('ERROR');
+    }
+
     // if firstNumber is less than secondNumber
     else if (firstNumber < secondNumber){
         // create for loop
