@@ -1,7 +1,8 @@
-const convertToCelsius = function() {
+const convertToCelsius = function(temperatureFahrenheit) {
+
 };
 
-const convertToFahrenheit = function() {
+const convertToFahrenheit = function(temperatureCelcius) {
 };
 
 // Do not edit below this line
