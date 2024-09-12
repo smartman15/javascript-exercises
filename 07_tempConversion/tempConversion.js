@@ -10,7 +10,7 @@ const convertToCelsius = function(temperatureFahrenheit) {
 
 const convertToFahrenheit = function(temperatureCelcius) {
   formulaCelcius = (temperatureCelcius * (9/5) + 32);
-  roundedCelcius = formulaCelcius.tofixed(1);
+  roundedCelcius = Number(formulaCelcius.toFixed(1));
   return roundedCelcius;
 };
 
