@@ -14,7 +14,8 @@ const multiply = function(arr) {
   return arr.reduce((accum, number) => accum * number, 1);
 };
 
-const power = function() {
+const power = function(a, b) {
+  return Math.pow(a, b);
 	
 };
 
