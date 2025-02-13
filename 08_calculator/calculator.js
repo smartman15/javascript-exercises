@@ -21,7 +21,7 @@ const power = function(a, b) {
 
 const factorial = function(a) {
   // create an empty array
-  // create for loop that starts from 1 and ends at a (if a is 1, add 1 into array)
+  // create for loop that starts from 1 and ends at a (if a is 0, add 0 into array)
     // add i into array
   
   // use reduce() to multiply all numbers together and return value 
