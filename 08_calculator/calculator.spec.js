@@ -15,7 +15,7 @@ describe('add', () => {
 });
 
 describe('subtract', () => {
-  test.skip('subtracts numbers', () => {
+  test('subtracts numbers', () => {
     expect(calculator.subtract(10, 4)).toBe(6);
   });
 });
