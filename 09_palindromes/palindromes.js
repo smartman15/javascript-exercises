@@ -1,4 +1,11 @@
 const palindromes = function (word) {
+    // turn string into array
+    const arr = word.split("");
+    // use array methods to manipulate array
+    const filteredArr = arr.filter((letter) => letter != '!');
+    // glue string together in the end
+    word = filteredArr.join('');
+
     const wordLength = word.length;
     let j = wordLength - 1;
 
