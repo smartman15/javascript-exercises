@@ -10,7 +10,7 @@ describe('palindromes', () => {
   test('works with upper-case letters ', () => {
     expect(palindromes('Racecar!')).toBe(true);
   });
-  test.skip('works with multiple words', () => {
+  test('works with multiple words', () => {
     expect(palindromes('A car, a man, a maraca.')).toBe(true);
   });
   test.skip('works with multiple words', () => {

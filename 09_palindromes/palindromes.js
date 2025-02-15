@@ -4,8 +4,8 @@ const palindromes = function (word) {
     // use array methods to manipulate array
     
     const filteredArr = arr
-                        // remove punctuation
-                        .filter((letter) => letter != '!')
+                        // remove punctuation, comas, periods and spaces
+                        .filter((letter) => (letter != '!' && letter != ',' && letter != '.' && letter != ' '))
                         // turn letters into lower-case
                         .map(letter => letter.toLowerCase());
     // turn letters into lower-case
