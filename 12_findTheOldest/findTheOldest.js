@@ -20,7 +20,16 @@ const findTheOldest = function(arr) {
     
     // use sort() to determine who is the oldest
     // in the sort() calculate age of the two people, sort from oldest to youngest
+    const sortedArr = arr.sort(function(a, b){
+        const ageA = a.yearOfDeath - a.yearOfBirth;
+        const ageB = b.yearOfDeath - b.yearOfBirth;
+
+        return ageB - ageA;
+    })
+    
     // return the object of the oldest person
+    const oldest = sortedArr[0];
+    return oldest;
 
 };
 
