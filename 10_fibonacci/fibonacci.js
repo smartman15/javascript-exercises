@@ -1,4 +1,6 @@
 const fibonacci = function(num) {
+    if(num == 0) return 0;
+    
     let initial = [1, 1];
     
     // create a variable to determine how many times the for loop should loop
