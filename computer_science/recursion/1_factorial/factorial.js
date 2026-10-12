@@ -1,11 +1,11 @@
 const factorial = function (number) {
-  if (!Number.isInteger(number)) {
+  if (!Number.isInteger(number) || number < 0) {
     return undefined;
   }
   if (number === 0 || number === 1) {
     return 1;
   } else {
-    return;
+    return number * factorial(number - 1);
   }
 
   // 0! = 1
