@@ -5,21 +5,31 @@ const contains = function (object, searchValue) {
   ) {
     return true;
   } else {
-    for (let i = 0; i < Object.keys(object).length; i++) {
+    let found = false;
+    for (const key in object) {
       if (
-        typeof Object.values(object)[i] === "object" &&
-        Object.values(object)[i] !== null
+        typeof object[key] === "object" &&
+        object[key] !== null &&
+        !Array.isArray(object[key])
       ) {
-        return contains(object[Object.keys(object)[i]], searchValue);
+        found = contains(object[key], searchValue);
       }
     }
-
-    // object.forEach((child) => {
-    //   contains(child, searchValue);
-    // });
+    if (found === true) {
+      return true;
+    } else {
+      return false;
+    }
+    // for (let i = 0; i < Object.keys(object).length; i++) {
+    //   if (
+    //     typeof Object.values(object)[i] === "object" &&
+    //     Object.values(object)[i] !== null &&
+    //     !Array.isArray(Object.values(object)[i])
+    //   ) {
+    //     contains(object[Object.keys(object)[i]], searchValue);
+    //   }
+    // }
   }
-
-  return false;
 };
 
 // Do not edit below this line
