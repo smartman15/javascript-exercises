@@ -7,11 +7,11 @@ const contains = function (object, searchValue) {
   } else {
     let found = false;
     for (const key in object) {
-      if (
-        typeof object[key] === "object" &&
-        object[key] !== null &&
-        !Array.isArray(object[key])
-      ) {
+      if (found === true) {
+        return true;
+      }
+
+      if (typeof object[key] === "object" && object[key] !== null) {
         found = contains(object[key], searchValue);
       }
     }
