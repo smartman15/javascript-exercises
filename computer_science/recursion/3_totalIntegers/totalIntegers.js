@@ -2,8 +2,9 @@ const totalIntegers = function (object) {
   // if (JSON.stringify(object) == JSON.stringify({ a: 1, b: "2", c: 3 })) {
   //   return 2;
   // }
-
-  if (object.length === 0 || Object.keys(object).length === 0) {
+  if (!(Array.isArray(object) || typeof object === "object")) {
+    return undefined;
+  } else if (object.length === 0 || Object.keys(object).length === 0) {
     return 0;
   } else {
     let count = 0;
