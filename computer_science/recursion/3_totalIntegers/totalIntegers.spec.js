@@ -54,11 +54,11 @@ describe("totalIntegers", () => {
     expect(totalIntegers(NaN)).toBe(undefined);
   });
 
-  test.skip("Does not count NaN as an integer", () => {
+  test("Does not count NaN as an integer", () => {
     expect(totalIntegers([5, NaN, [NaN, NaN, 64], 4])).toBe(3);
   });
 
-  test.skip("Counts all integers even with deeply nested containing multiple types", () => {
+  test("Counts all integers even with deeply nested containing multiple types", () => {
     expect(
       totalIntegers([
         NaN,
@@ -74,7 +74,7 @@ describe("totalIntegers", () => {
     ).toBe(5);
   });
 
-  test.skip("Counts all integers when nested arrays and objects are mixed together", () => {
+  test("Counts all integers when nested arrays and objects are mixed together", () => {
     expect(totalIntegers([4, 6, { a: 1, b: { a: [5, 10], b: 11 } }, 9])).toBe(
       7
     );
