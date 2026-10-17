@@ -4,7 +4,10 @@ const totalIntegers = function (object) {
   // }
   if (!(Array.isArray(object) || typeof object === "object")) {
     return undefined;
-  } else if (object.length === 0 || Object.keys(object).length === 0) {
+  } else if (
+    object !== null &&
+    (object.length === 0 || Object.keys(object).length === 0)
+  ) {
     return 0;
   } else {
     let count = 0;
