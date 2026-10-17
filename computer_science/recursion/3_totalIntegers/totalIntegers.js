@@ -1,7 +1,4 @@
 const totalIntegers = function (object) {
-  // if (JSON.stringify(object) == JSON.stringify({ a: 1, b: "2", c: 3 })) {
-  //   return 2;
-  // }
   if (!(Array.isArray(object) || typeof object === "object")) {
     return undefined;
   } else if (
@@ -21,23 +18,6 @@ const totalIntegers = function (object) {
         count += totalIntegers(object[num]);
       }
     }
-    // let count = 0;
-    // if (Array.isArray(Object.values(object))) {
-    //   for (const key in object) {
-    //     if (typeof object[key] === "number") {
-    //       count += 1;
-    //     }
-    //   }
-    // } else {
-    //   object.forEach((element) => {
-    //     if (typeof element === "number") {
-    //       count += 1;
-    //     } else if (Array.isArray(element)) {
-    //       count += totalIntegers(object);
-    //     }
-    //   });
-    // }
-
     return count;
   }
 };
