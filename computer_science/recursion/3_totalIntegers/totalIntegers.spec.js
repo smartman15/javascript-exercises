@@ -47,7 +47,7 @@ describe("totalIntegers", () => {
     ).toBe(7);
   });
 
-  test.skip("Returns undefined for non-array/object arguments", () => {
+  test("Returns undefined for non-array/object arguments", () => {
     expect(totalIntegers("2")).toBe(undefined);
     expect(totalIntegers(() => {})).toBe(undefined);
     expect(totalIntegers(42)).toBe(undefined);
