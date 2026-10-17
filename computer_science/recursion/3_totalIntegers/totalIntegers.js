@@ -8,7 +8,7 @@ const totalIntegers = function (object) {
   } else {
     let count = 0;
     for (const num in object) {
-      if (typeof object[num] === "number") {
+      if (Number.isInteger(object[num])) {
         count += 1;
       } else if (
         (Array.isArray(object[num]) || typeof object[num] === "object") &&
