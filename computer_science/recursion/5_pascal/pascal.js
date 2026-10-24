@@ -7,7 +7,7 @@ const pascal = function (number) {
     for (let i = 0; i < number; i++) {
       if (i === 0) {
         arr.push(pascal(number - 1)[i]);
-        arr.push(pascal(number - 1)[i] + pascal(3)[i + 1]);
+        arr.push(pascal(number - 1)[i] + pascal(number - 1)[i + 1]);
       } else if (i === number - 1) {
         arr.push(pascal(number - 1)[i - 1] + pascal(number - 1)[i]);
         arr.push(pascal(number - 1)[i]);
